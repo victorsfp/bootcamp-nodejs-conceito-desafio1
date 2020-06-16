@@ -71,9 +71,7 @@ app.post("/repositories/:id/like", (request, response) => {
   }
 
   repositories[respositoryIndex] = repository
-
   return response.status(200).json(repository)
-
 });
 
 module.exports = app;
